@@ -720,30 +720,6 @@ a:active {
     }
 }
 
-.button-wrap-0 {
-    bottom: 0.8366666667rem;
-    left: 0.8266666667rem;
-    position: fixed;
-    right: 0.8266666667rem;
-    z-index: 11
-}
-
-@media all and (min-width: 45em) {
-    .button-wrap-0 {
-        bottom: auto;
-        display: inline-block;
-        font-size: 0.8333333333rem;
-        left: auto;
-        position: relative
-    }
-}
-
-@media all and (min-width: 60em) {
-    .button-wrap-0 {
-        font-size: 1rem
-    }
-}
-
 .button-sheen {
     overflow: hidden;
     position: relative;
