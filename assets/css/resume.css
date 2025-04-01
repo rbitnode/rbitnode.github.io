@@ -1,85 +1,90 @@
-div.WordSection1 {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 15px;
+/* Modern Resume CSS */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #fff;
 }
 
-p.MsoTitle,
-li.MsoTitle,
-div.MsoTitle {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    text-align: center;
-    line-height: 140%;
-    background: #eeebff;
-    font-size: 72px;
-    font-family: "Speak Pro", sans-serif;
-    color: #262626;
-    letter-spacing: 5px;
-    font-weight: bold;
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
 
-p.MsoSubtitle,
-li.MsoSubtitle,
-div.MsoSubtitle {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    line-height: 120%;
-    font-size: 30px;
-    font-family: "Calibri", sans-serif;
-    color: #5A5A5A;
-}
-
-p.MsoNormal,
-li.MsoNormal,
-div.MsoNormal {
-    margin-top: 10px;
-    line-height: 150%;
-    font-size: 20px;
-    font-family: "Calibri", sans-serif;
-    color: #595959;
+h1, h2, h3 {
+    font-weight: 600;
 }
 
 h1 {
-    margin-top: 80px;
-    margin-bottom: 12px;
-    line-height: 120%;
-    font-size: 50px;
-    font-family: "Speak Pro", sans-serif;
-    color: #262626;
-    letter-spacing: 5px;
-    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    background: -webkit-linear-gradient(left, #ff9a9e, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    margin-top: 10px;
-    margin-bottom: 9.0pt;
-    line-height: 120%;
     font-size: 24px;
-    font-family: "Calibri", sans-serif;
-    color: #595959;
-    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-top: 30px;
 }
 
-h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    line-height: 120%;
-    font-size: 22px;
-    font-family: "Calibri", sans-serif;
-    color: #595959;
-    text-transform: uppercase;
-    font-weight: bold;
+p, ul {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-
-
-span.Bold {
-    font-weight: bold;
+.contact {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-span.Shade {
-    border: none;
-    background: #eeebff;
+.contact a {
+    color: #fad0c4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    color: #ff9a9e;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.skills {
+    /* margin-bottom: 30px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill-item:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
 }
