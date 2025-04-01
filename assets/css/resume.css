@@ -166,6 +166,7 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-align: center;
+    flex-direction: row;
 }
 
 .skill-tag:hover {
@@ -206,7 +207,6 @@ body {
     .skill-tag {
         font-size: 14px;
         padding: 8px 16px;
-        flex-direction: row;
     }
 
     .container {
