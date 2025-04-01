@@ -1,42 +1,52 @@
-/* Base Styles (Mobile First) */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to left, #2c3e50, #4ca1af);
+    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 50%, rgba(0,255,218,0.804359243697479) 100%, rgba(0,212,255,1) 100%);
     margin: 0;
     padding: 0;
     color: #fff;
 }
 
 .container {
-    max-width: 90%;
+    width: 60%;
     margin: 20px auto;
-    padding: 20px;
+    padding: 50px;
     background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 50%, rgba(0,255,218,0.804359243697479) 100%, rgba(0,212,255,1) 100%);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     transition: transform 0.3s ease-in-out;
 }
 
 .container:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 /* Header Styling */
 .header {
     text-align: center;
+    color: rgba(0, 0, 0, 0.7);
     padding: 40px 20px;
     background: linear-gradient(45deg, #6a82fb, #fc5c7d);
-    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 0 10px 0;
+}
+
+.header:hover {
+    transform: scale(1.05);
 }
 
 .header h1 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
 .header p {
     font-size: 18px;
     margin: 5px 0;
+    font-style: italic;
 }
 
 /* Contact Links Styling */
@@ -47,13 +57,13 @@ body {
 
 .contact a {
     display: inline-block;
-    margin: 0 15px;
-    color: white;
+    margin: 0 10px;
+    color: #fff;
     font-size: 18px;
     text-decoration: none;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .contact a:hover {
@@ -64,10 +74,57 @@ body {
 /* Section Styling */
 .section {
     margin-bottom: 30px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.section:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.section p {
+    font-size: 16px;
+    color: #f0f0f0;
+    margin: 5px 0;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #cce7ff;
+    padding-bottom: 5px;
+}
+
+.section h3 {
+    color: #cce7ff;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.section ul li::before {
+    content: '\2022';
+    color: #cce7ff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
 }
 
 /* Experience Cards */
@@ -84,39 +141,86 @@ body {
     transform: scale(1.03);
 }
 
-/* Progress Bar Styling */
-.progress-bar {
-    margin: 15px 0;
-    background: #ccc;
-    border-radius: 5px;
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
 }
 
-.progress {
-    height: 20px;
-    background: #6a82fb;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 20px;
-    color: white;
-    font-weight: bold;
-    transition: width 1s ease;
-}
-
-/* Section Header Styles */
-.section h2 {
-    font-size: 24px;
+.skill-tag {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #333;
     color: #fff;
-    margin-bottom: 10px;
-}
-
-.section h3 {
-    font-size: 20px;
-    color: #fc5c7d;
-}
-
-.section p {
+    border-radius: 25px;
     font-size: 16px;
-    color: #f0f0f0;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.skill-tag:hover {
+    transform: scale(1.05);
+    background-color: #cce7ff;
+}
+
+.skill-tag.cplusplus {
+    background-color: #6a82fb;
+}
+
+.skill-tag.python {
+    background-color: #4ca1af;
+}
+
+.skill-tag.bash {
+    background-color: #333;
+}
+
+.skill-tag.aws {
+    background-color: #ff9900;
+}
+
+.skill-tag.google-cloud {
+    background-color: #4285f4;
+}
+
+.skill-tag.docker {
+    background-color: #2496ed;
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-tag {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section h3 {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 768px) {
