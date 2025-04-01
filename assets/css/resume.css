@@ -19,6 +19,12 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
 .container:hover {
     transform: scale(1.05);
 }
@@ -224,12 +230,6 @@ body {
 
     .section h3 {
         font-size: 16px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 80%;
     }
 }
 
