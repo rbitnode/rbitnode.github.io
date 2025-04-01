@@ -238,3 +238,60 @@ body {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Floating Download Button (Fixed on Desktop, Scrollable on Mobile) */
+.download-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* General Button Styling */
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background: #fc5c7d;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn i {
+    font-size: 20px;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+}
+
+.pdf-btn {
+    background: #d9534f;
+}
+
+.docx-btn {
+    background: #007bff;
+}
+
+/* On Mobile, Buttons Should be Scrollable */
+@media (max-width: 600px) {
+    .download-buttons {
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .download-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
