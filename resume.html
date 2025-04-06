@@ -3,102 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajesh Negi - Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/resume.css">
+    <title>Resume - Rajesh Negi</title>
+    <style>
+        @media print {
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+
+            button {
+                display: none;
+            }
+            
+            section, div {
+                page-break-before: inherit;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section with a large gradient background -->
-        <div class="header">
-            <h1>Rajesh Negi</h1>
-            <p>Senior Software Engineer</p>
-            <p>Bengaluru, India</p>
+    <header>
+        <h1>Rajesh Negi</h1>
+        <p><strong>Technical Lead</strong></p>
+        <p>Bengaluru, India</p>
+
+        <div>
+            <p>
+                <a href="tel:+918639348136" target="_blank"><strong>863-934-8136</strong></a> |
+                <a href="mailto:rajesh_negi@outlook.com" target="_blank"><strong>rajesh_negi@outlook.com</strong></a> |
+                <a href="https://linkedin.com/in/rajesh-negi" target="_blank"><strong>LinkedIn</strong></a> |
+                <a href="https://github.com/rbitnode" target="_blank"><strong>GitHub</strong></a>
+            </p>
         </div>
-        
-        <!-- Contact Information Section with icons -->
-        <div class="contact">
-            <a href="mailto:rajesh_negi@outlook.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
-            <a href="tel:+918639348136" class="contact-link"><i class="fas fa-phone"></i> 863-934-8136</a>
-            <a href="https://linkedin.com/in/rajesh-negi" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/rajesh-negi" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Results-driven <strong>Technical Lead</strong> with a proven track record of architecting and 
+            delivering <strong>secure</strong>, <strong>scalable</strong>, and <strong>high-performance</strong> applications. 
+            Adept in <strong>C++</strong>, <strong>Python</strong>, and <strong>Flutter</strong>, with hands-on expertise in the 
+            entire <strong>software development lifecycle (SDLC)</strong> from strategic planning and coding to DevOps and seamless 
+            deployment. A <strong>problem-solver</strong> at heart, passionate about tackling complex challenges, optimizing performance, 
+            and engineering solutions that scale to millions of users worldwide. Skilled in <strong>Agile methodologies</strong> and 
+            <strong>cloud computing</strong>. Known for driving innovation, enhancing system efficiency, and leading 
+            <strong>high-performing</strong> teams to build impactful, industry-leading products.
+        </p>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+
+        <div>
+            <h3>Technical Lead | KPIT</h3>
+            <h4>June 2023 - Present | Bengaluru, IN</h4>
+            <p>
+                As a Technical Lead within the Autonomous Driving Group, I am responsible for driving product 
+                architecture, optimizing software, and leading a team of 5 engineers to deliver high-performance 
+                solutions for autonomous driving systems. Key contributions include:
+            </p>
+            <ul>
+                <li><strong>Product Planning & Collaboration:</strong> Actively involved in product planning with product 
+                    owners and stakeholders, ensuring alignment on technical and business requirements.
+                </li>
+                <li><strong>Architecture & Design:</strong> Led the architecture definition for critical modules in the 
+                    Autonomous Driving Stack (e.g., MachineStateManager, PowerStateListener, ExecutionManager), utilizing UML, 
+                    flowcharts, and sequence diagrams to translate complex requirements into efficient code solutions.
+                </li>
+                <li><strong>Code Optimization:</strong> Worked with the development team to optimize existing code based on 
+                    architectural designs, improving overall system performance and maintainability.
+                </li>
+                <li><strong>CI/CD & DevOps:</strong> Spearheaded the development of robust CI/CD pipelines in GitLab CI, 
+                    optimizing the build process, implementing code coverage checks, and integrating multiple toolchains 
+                    (Clang, GCC, QNX) into the build system using Bazel.
+                </li>
+                <li><strong>Middleware Development:</strong> Contributed to the development of Plexus, a high-performance 
+                    middleware platform, as part of strategic decision for product improvement.</li>
+                <li><strong>Cross-Functional Collaboration:</strong> Collaborated with global teams to drive agile development 
+                    processes, ensuring timely delivery of features and fostering a culture of innovation.
+                </li>
+            </ul>
         </div>
-        
-        <!-- About Me Section with text animation -->
-        <div class="section about">
-            <h2>About Me</h2>
-            <p>A results-driven Software Engineer with 7+ years of experience developing scalable, high-performance applications. Proficient in C++, Python, and cloud technologies, with expertise in SDLC, CI/CD pipelines, and Agile methodologies. Passionate about solving complex problems, optimizing performance, and leading engineering initiatives.</p>
+
+        <div>
+            <h3>Senior Software Engineer | Hughes Communications</h3>
+            <h4>Jan 2022 - June 2023 | Gurugram, IN</h4>
+            <h4>Client: Defense Research and Development Organization (DRDO)</h4>
+            <ul>
+                <li>Led the design and development of a <strong>Software Defined Radio (SDR) platform</strong> based on <strong>Software 
+                    Communication Architecture (SCA) 4.1</strong> for DRDO, with plans for its integration into the 
+                    <strong>Rafale fighter aircraft</strong>.
+                </li>
+                <li>Independently implemented <strong>Ethernet and Serial Port modules</strong>
+                    for data transfer between SDRs, ensuring robust communication and performance in complex systems.
+                </li>
+                <li>Collaborated as part of a team of 6 engineers, contributing to the development of over 
+                    <strong>24 modules</strong> within the SDR platform, each member handling around 4 modules.
+                </li>
+                <li>Utilized <strong>QNX</strong>, <strong>Linux</strong>, and <strong>C++</strong> to develop and test software components, 
+                    ensuring high reliability and performance.
+                </li>
+                <li>Conducted <strong>static and dynamic testing</strong> of code using <strong>LDRA</strong>, 
+                    ensuring software quality and meeting stringent defense requirements.
+                </li>
+                <li>Worked alongside DRDO scientists at the <strong>Dehradun DEAL Laboratory</strong>, contributing to the 
+                    <strong>beta testing</strong> of the SDR system, including successful demonstrations using microphones and speakers.
+                </li>
+                <li>Recognized for contributing to the <strong>end-to-end testing</strong> of SDR modules and the successful 
+                    implementation of <strong>India's own SCA framework</strong>, alongside DRDO and HSC leadership teams.
+                </li>
+                <li>Engaged in <strong>continuous collaboration</strong> with <strong>cross-functional teams</strong>, including DRDO 
+                    leadership and other domain experts, to drive the development of <strong>India's own SCA system</strong>.
+                </li>
+            </ul>
         </div>
-        
-        <!-- Experience Section with card layout and shadow effects -->
-        <div class="section">
-            <h2>Experience</h2>
-            
-            <!-- Mercedes-Benz Experience -->
-            <div class="experience-card">
-                <h3>Senior Software Engineer | Mercedes-Benz Research & Development India</h3>
-                <p><strong>June 2023 - Present | Bengaluru, IN</strong></p>
-                <ul>
-                    <li>Developing <strong>Plexus</strong>, a high-performance middleware platform, improving efficiency by 20%.</li>
-                    <li>Implemented optimizations in C++ and Python, reducing memory footprint by 15%.</li>
-                    <li>Designed CI/CD pipelines and DevContainers for seamless integration using GitLab and Docker.</li>
-                    <li>Collaborated with global teams to drive Agile development and product innovation.</li>
-                </ul>
-            </div>
-            
-            <!-- Hughes Communications Experience -->
-            <div class="experience-card">
-                <h3>Senior Software Engineer | Hughes Communications</h3>
-                <p><strong>Jan 2022 - June 2023 | Gurugram, IN</strong></p>
-                <ul>
-                    <li>Contributed to <strong>Software Defined Radio (SDR)</strong> platform based on SCA 4.1.</li>
-                    <li>Developed critical modules in C++ on QNX, enhancing signal processing performance by 25%.</li>
-                    <li>Worked closely with DRDO scientists for successful product deployment.</li>
-                </ul>
-            </div>
+
+        <div>
+            <h3>Software Engineer | Mitel Networks</h3>
+            <h4>Sep 2020 - Dec 2021 | Bengaluru, IN</h4>
+            <ul>
+                <li><strong>Protocol Optimization:</strong> Identified and resolved critical issues in Mitel's legacy VOIP protocol, 
+                    which led to a 50% increase in call failures due to packet loss. Discovered that plain C++ structure serialization 
+                    was causing packet fragmentation and delays.
+                </li>
+                <li><strong>Development of MiCC-NPG:</strong> Led the development of <strong>MiCC New Protocol Gateway (NPG)</strong>, 
+                    replacing the legacy protocol with <strong>Protocol Buffers</strong> and leveraging <strong>gRPC</strong>, 
+                    achieving a <strong>95%</strong> reduction in data size and improving system performance.
+                </li>
+                <li><strong>Performance Improvements:</strong> Reduced network traversal time for VOIP packets 
+                    by <strong>85%</strong>, enhancing call quality and system responsiveness.
+                </li>
+                <li><strong>Strategic Impact:</strong> Contributed to a major 
+                    <a href="https://www.channele2e.com/news/ringcentral-acquires-certain-mitel-technologies-inks-ucaas-partnership" target="_blank">acquisition</a> 
+                    of Mitel's Cloud Connect technology by RingCentral for <strong>$650 million USD</strong> due to the enhancements 
+                    made, strengthening the market position of Mitel Cloud Connect.
+                </li>
+            </ul>
         </div>
-        
-        <!-- Skills Section with Tags -->
-        <div class="section">
-            <h2>Skills</h2>
-            
-            <h3>Programming Languages:</h3>
-            <div class="skills-container">
-                <div class="skill-tag cplusplus">C++</div>
-                <div class="skill-tag python">Python</div>
-                <div class="skill-tag bash">Bash</div>
+
+        <div>
+            <h3>Software Programmer | VoiceGate Technologies</h3>
+            <h4>Mar 2017 - Jan 2020 | Hyderabad, IN</h4>
+            <ul>
+                <li>Developed and maintained <strong>IVRS (Interactive Voice Response Systems)</strong> and <strong>Call center software 
+                    solutions</strong>, primarily focusing on automated <strong>outbound dialing</strong>, <strong>call recording</strong>, and <strong>messaging</strong>.
+                </li>
+                <li>Initially worked as part of a small development team of two but later became the sole developer, managing multiple client 
+                    projects independently with occasional support from the IT head.
+                </li>
+                <li>Customized and modified existing software products to meet the specific requirements 
+                    of various clients across different industries.
+                </li>
+                <li>Ensured regular software updates, version control (GitHub), and proper 
+                    bug tracking and resolution for a variety of features.
+                </li>
+                <li>Collaborated closely with clients to understand their use cases and translated them into technical solutions, ensuring smooth 
+                    deployment and ongoing support.
+                </li>
+                <li>Enhanced the functionality and performance of existing products, 
+                    contributing to client satisfaction and project success.
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <div>
+                <p><strong>Programming and Scripting Languages:</strong>
+                    C++,
+                    Python,
+                    Dart (Flutter),
+                    Linux Bash,
+                    HTML
+                </p>
             </div>
 
-            <h3>Cloud & DevOps:</h3>
-            <div class="skills-container">
-                <div class="skill-tag aws">AWS</div>
-                <div class="skill-tag google-cloud">Google Cloud</div>
-                <div class="skill-tag docker">Docker</div>
+            <div>
+                <p><strong>Software Design & Architecture:</strong>
+                    Object-Oriented Programming (OOP),
+                    System Design,
+                    Data Structures,
+                    Algorithms,
+                    Design Patterns
+                </p>
             </div>
-        </div>
-        
-        <!-- Education Section -->
-        <div class="section">
-            <h2>Education</h2>
 
-            <h3>Coventry University, UK | 2023-2025</h3>
-            <p><strong>Master of Technology (M.Tech)</strong></p>
-            <p>Automotive Software Engineering</p>
-            
-            <h3>JNTU, Hyderabad, IN | 2013-2017</h3>
-            <p><strong>Bachelor of Technology (B.Tech)</strong></p>
-            <p>Computer Science Engineering</p>
-        </div>
-    </div>
+            <div>
+                <p><strong>Software Development & Project Management:</strong>
+                    Full Software Development Lifecycle (SDLC),
+                    Agile & Scaled Agile Framework (SAFe),
+                    JIRA,
+                    Cross-Functional Collaboration,
+                    Leading Teams,
+                    Client Interaction
+                </p>
+            </div>
 
-    <div class="download-buttons">
-        <a href="/assets/files/Rajesh_Negi_Resume.pdf" download class="download-btn pdf-btn">
-            <i class="fas fa-file-pdf"></i> Download PDF
-        </a>
-        <a href="/assets/files/Rajesh_Negi_Resume.docx" download class="download-btn docx-btn">
-            <i class="fas fa-file-word"></i> Download DOCX
-        </a>
-    </div>
+            <div>
+                <p><strong>Cloud Computing & Web Services:</strong>
+                    AWS (EC2, S3, Lambda),
+                    Amazon AWS SDK,
+                    Google Maps SDK,
+                    Cloud Platforms,
+                    Distributed Systems
+                </p>
+            </div>
 
+            <div>
+                <p><strong>Build System, DevOps & CI/CD:</strong>
+                    Bazel,
+                    GNU Make,
+                    CMake,
+                    Clang,
+                    GCC,
+                    GDB,
+                    Valgrind,
+                    GitLab CI,
+                    Docker,
+                    Git
+                </p>
+            </div>
+
+            <div>
+                <p><strong>Databases & Data Management:</strong>
+                    MySQL,
+                    MongoDB,
+                    Redis,
+                    XML Schema,
+                    ARXML for automotive software architecture
+                </p>
+            </div>
+
+            <div>
+                <p><strong>Testing & Quality Assurance:</strong>
+                    Static and Dynamic Testing (BlackDuck Coverity),
+                    Unit Testing (googletest),
+                    Continuous Integration
+                </p>
+            </div>
+
+            <div>
+                <p><strong>Operating Systems & Embedded Systems:</strong>
+                    QNX,
+                    Linux,
+                    Real-Time Operating Systems (RTOS)
+                </p>
+            </div>
+
+            <div>
+                <p><strong>Communication Protocols & Networking:</strong>
+                    Ethernet,
+                    Serial Port,
+                    SIP 2.0,
+                    VOIP,
+                    Protocol Buffers,
+                    gRPC
+                </p>
+            </div>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Education</h2>
+
+        <ul>
+            <div>
+                <h3>Coventry University, UK | 2023-2025</h3>
+                <p>
+                    Master of Technology (M.Tech)<br>
+                    Automotive Software Engineering
+                </p>
+            </div>
+
+            <div>
+                <h3>JNTU, Hyderabad, IN | 2013-2017</h3>
+                <p>
+                    Bachelor of Technology (B.Tech)<br>
+                    Computer Science Engineering
+                </p>
+            </div>
+        </ul>
+    </section>
+    
+    <section>
+        <button onclick="downloadPDF()">Download PDF</button>
+    </section>
+
+    <script>
+        function downloadPDF() {
+            window.print();
+        }
+    </script>
 </body>
 </html>
